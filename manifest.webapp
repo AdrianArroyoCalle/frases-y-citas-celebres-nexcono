@@ -1,0 +1,20 @@
+{
+	"name" : "Frases y citas célebres - NexCono",
+	"description" : "Las mejores frases y citas célebres. Todos los días una frase nueva. ¡Inspírate!",
+	"launch_path" : "/index.html",
+	"icons" : {
+		"128" : "/icon.png"
+	},
+	"developer" : {
+		"name" : "Adrián Arroyo Calle",
+		"url" : "http://adrianarroyocalle.github.io"
+	},
+	"default_locale" : "es",
+	"type" : "privileged",
+	"permissions": {
+		"systemXHR":{
+			"description" : "Necesario para descargar las frases"
+		}
+	},
+	"version" : "1.0"
+}

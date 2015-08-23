@@ -1,0 +1,23 @@
+@media all and (orientation: portrait){
+	#banner{
+		width: 100%;
+		height: auto;
+	}
+}
+#banner{
+	max-width: 100%;
+	/*top: 0px;
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	position: absolute;*/
+}
+body{
+	background-color: black;
+	text-align: center;
+}
+.quote{
+	background-color: #F7D475;
+	font-style: italic;
+	font-weight: bold;
+}
