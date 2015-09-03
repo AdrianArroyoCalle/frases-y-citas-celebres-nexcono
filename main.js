@@ -10,6 +10,7 @@ xhr.addEventListener("load",function(){
 	for(var i=0;i<entries.length;i++){
 		ARCHIVE.push(entries[i].textContent);
 	}
+	POSITION=ARCHIVE.length-1;
 	document.getElementById("quote").textContent=ARCHIVE[POSITION];
 });
 xhr.send();
@@ -17,19 +18,19 @@ xhr.send();
 
 var more=document.getElementById("more");
 more.addEventListener("click",function(){
-	POSITION++;
-	if(ARCHIVE.length === POSITION)
-		POSITION=0;
+	POSITION--;
+	if(0 === POSITION)
+		POSITION=ARCHIVE.length;
 	document.getElementById("quote").textContent=ARCHIVE[POSITION];
 });
 
-var ad=Inneractive.createAd({
+/*var ad=Inneractive.createAd({
 	TYPE: "Banner",
 	REFRESH_RATE: 30,
 	APP_ID: "Divel_Frases_Y_Citas_NexCono_other"
 });
 ad.addTo(document.body);
-ad.placement("bottom","center");
+ad.placement("bottom","center");*/
 
 // Share Image http://dummyimage.com/600x400/000/fff.png&text=encodeURIComponent(text)
 
